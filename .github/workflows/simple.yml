@@ -23,7 +23,7 @@ jobs:
       runs-on: windows-latest
       steps:
         - name: Directory
-        powershell
+        Powershell
           run: Get-Locatiom
         - name: Directory Bash
           run: pwd
