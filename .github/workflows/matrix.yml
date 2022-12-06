@@ -8,13 +8,13 @@ jobs:
         node_version: [6,8,10]
         include:
           - os: ubuntu-latest
-              node_version: [6,8,10]
+            node_version: [6,8,10]
             is_ubuntu_8: "true"
         exclude:
           - os: ubuntu-latest
-              node_version: 6
+            node_version: 6
           - os: macos-latest
-              node_version: 8
+            node_version: 8
     runs-on: ${{matrix.os}}
     env:
       IS_UBUNTU_8: ${{ matrix.is_ubuntu_8}}
